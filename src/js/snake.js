@@ -64,10 +64,10 @@ function respaw() {
 
   //snake's head
   var snakeHead = document.querySelector('.cell-' + startCoordY + '-' + startCoordX)
-  snakeHead.setAttribute('class', snakeHead.getAttribute('class') + ' snake-unit');
+  snakeHead.setAttribute('class', snakeHead.getAttribute('class') + ' snake-unit')
   // snake's tail
   var snakeTail = document.getElementsByClassName('cell-' + (startCoordY - 1) + '-' + startCoordX)[0]
-  snakeTail.setAttribute('class', snakeTail.getAttribute('class') + ' snake-unit');
+  snakeTail.setAttribute('class', snakeTail.getAttribute('class') + ' snake-unit')
   snake.push(snakeHead)
   snake.push(snakeTail)
 }
