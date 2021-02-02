@@ -1,0 +1,46 @@
+.page {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    font-size: 18px;
+}
+
+.index-page {
+    width: 800px;
+    margin: 40px auto;
+}
+
+.game-table {
+    border-collapse: collapse;
+    background-color: #3e3e3e;
+}
+td.game-table-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px dotted #eee;
+}
+.snake-unit {
+    background-color: white;
+}
+.food-unit {
+    background-color: red;
+}
+.bomb-unit {
+    background-color: rgb(253, 255, 128);
+}
+
+.buttons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.button {
+    width: 150px;
+    padding: 15px;
+    margin-right: 10px;
+    color: white;
+    background-color: green;
+    text-align: center;
+    cursor: pointer;
+}
