@@ -11,7 +11,7 @@ var bombTime = 2000
 var bombs = []
 
 function init() {
-  prepareGameField () // generating a field
+  prepareGameField ()
   document.getElementById('snake-start').addEventListener('click', starGame)
   document.getElementById('snake-renew').addEventListener('click', refreshGame)
   addEventListener('keydown', changeDirection)
@@ -46,7 +46,7 @@ function prepareGameField() {
 
 function starGame() {
   gameIsRunning = true
-  respaw() // creating a snake
+  respawn() // creating a snake
   snakeTimer = setInterval(move, snakeSpeed) // every 200 ms run function move
   setTimeout(createFood, 5000)
   setInterval(createBomb, bombTime)
@@ -54,7 +54,7 @@ function starGame() {
 
 // function creating a snake
 
-function respaw() {
+function respawn() {
   // snake is array td
   // start length snake = 2
 
