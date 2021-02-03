@@ -1,0 +1,42 @@
+env:
+  browser: true
+  es6: true
+  node: true
+  jest: true
+extends: eslint:recommended
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    jsx: true
+  sourceType: module
+plugins:
+  - react
+  - react-hooks
+settings:
+  react:
+    version: detect
+rules:
+  react/prop-types: [2, { ignore: [t, tReady] }]
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: warn
+  space-before-blocks: error
+
+  eqeqeq: [error, always, { null: ignore }]
+
+  indent:
+    - error
+    - 2
+
+  linebreak-style:
+    - error
+    - unix
+
+  quotes:
+    - error
+    - single
+
+  semi:
+    - error
+    - never
