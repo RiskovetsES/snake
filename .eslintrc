@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "semi": "off",
+    "no-plusplus": "off",
+    "default-case":"off",
+    "max-lines-per-function": ["error", {"max": 20, "skipComments": true, "skipBlankLines": true}],
+  }
+}

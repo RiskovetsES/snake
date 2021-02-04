@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { VueLoaderPlugin } = require("vue-loader");
+// const ESLintPlugin = require('eslint-webpack-plugin');
 
 // Main const. Feel free to change it
 const PATHS = {
@@ -110,6 +111,7 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
+    // new ESLintPlugin(),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/${PATHS.assets}video`, to: `${PATHS.assets}video` },
