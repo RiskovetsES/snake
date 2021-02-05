@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
-        "build": "webpack --config ./build/webpack.build.conf.js"
+        "build": "webpack --config ./build/webpack.build.conf.js",
+        "lint": "eslint ./src",
+        "lint:fix": "eslint ./src --fix"
     },
     "browserslist": [
         "> 1%",
@@ -35,17 +37,24 @@
     "devDependencies": {
         "@babel/core": "^7.7.7",
         "@babel/preset-env": "^7.7.7",
+        "@eslint/eslintrc": "^0.3.0",
         "autoprefixer": "^9.7.3",
         "babel-loader": "^8.0.6",
         "copy-webpack-plugin": "^5.1.1",
         "css-loader": "^3.4.0",
         "cssnano": "^4.1.10",
+        "eslint": "7.2.0",
+        "eslint-config-airbnb-base": "14.2.1",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-webpack-plugin": "^2.4.3",
         "file-loader": "^5.0.2",
         "html-webpack-plugin": "^3.2.0",
         "mini-css-extract-plugin": "^0.9.0",
         "node-sass": "^4.13.0",
         "postcss-loader": "^3.0.0",
-        "prettier": "2.2.1",
+        "prettier": "^2.2.1",
         "pug": "^3.0.0",
         "pug-loader": "^2.4.0",
         "sass-loader": "^8.0.0",
